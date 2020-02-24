@@ -1,4 +1,48 @@
 {% extends "layout.html" %}
 {% block content %}
-	<h1>This is the h1 tag</h1>
+	<p class="center">
+		<a href="{{ url_for('web_design') }}">Web Designer</a> | 
+		<a href="{{ url_for('development') }}">Developer</a> | 
+		<a href="{{ url_for('pixel_art') }}">Pixel Artist</a> 
+		<br> and polyglot with too many hobbies to list.</p>
+		<div class="indent">
+			<h4>Tell me more about yourself.</h4>
+			I love baking, bread, and food. I also have a tendency to forget that hot things are hot. This leads to many accidents. 
+			I am highly caffiene sensitive. It takes me over three hours to finish half cup of coffee. 
+			I often dream in 2d.
+		</div>
+		<div class="indent">
+			<h4>What languages do you know?</h4>
+			<div class="indent">
+				I like learning languages for fun.
+				<ul id="languages">
+					<li>French - Je parles français assez bien, mais ma vocabulaire ce n'est pas grande.</li>
+					<li>Dutch - Ik lees en spreek een beetje Nederlands, maar mijn spreken niet goede.</li>
+					<li>Japanese - type japanese here later, my poor windows keyboard can't do japanese well</li>
+					<li>Vietnamese - Noi voi tieng viet cũ duc, may khong veit duc.  FIX WITH PHONE KEYBOARD</li>
+					<li>Spanish - Yo tengo un pecuito Español por la cocina.</li>
+					<li>English - English is my native language.</li>
+				</ul>
+				Er wait, did you mean programming languages?
+				<ul>
+					<li>Python - First and most comfortable language. </li>
+					<li>HTML/CSS/JS - Trio I'm quite comfortable with, inclding ecmascript 2016 features</li>
+					<li>Liquid SASS - Miscellaneous web based languages I am okay with/</li>
+					<li>PHP - I can.</li>
+					<li>C++ - Quite doable - not as familiar with the libraries as it's not quite used for day to day programming, but familiar with the syntax and a lot of the stuff</li>
+					<li>...but seriously, look there. I learn languages for fun. If I'm not familiar with the language, I'm more than capable of learning pretty quickly</li>
+				</ul>
+				For examples, see either code snippets or webdev
+			</div>
+
+			<h4>Education?</h4>
+			<div class="indent">
+				I went to University of California, Irvine and graduated with a Computer Game Science degree.
+			</div>
+
+			<h4>Contact</h4>
+			<div class="indent">
+				sendak.vivian.mahr@gmail.com
+			</div>
+	</div>
 {% endblock %}
