@@ -1,0 +1,13 @@
+<html>
+	<head>
+		{% if title %}
+			<title>{{ title }} - Sendak Mahr</title>
+		{% else %}
+			<title>Sendak Mahr</title>
+		{% endif %}	
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">		
+	</head>
+	<body>
+		{% block content %}{% endblock %}
+	</body>
+</html>
