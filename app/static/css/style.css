@@ -72,6 +72,9 @@
         text-decoration: none;
         font-weight: bold;
     }
+    li  {
+        margin-bottom: 1em;
+    }
 
 @media only screen and (orientation: portrait) {
     nav { bottom: 0; }

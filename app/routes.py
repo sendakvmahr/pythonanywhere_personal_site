@@ -6,17 +6,17 @@ from app import app
 def homepage():
     return render_template("index.html")
 
-@app.route('/web_design')
-def web_design():
-    return render_template("index.html", title="Home")
+@app.route('/web_development')
+def web_development():
+    return render_template("web_development.html", title="Web Development")
 
 @app.route('/development')
 def development():
-    return render_template("index.html", title="Home")
+    return render_template("development.html", title="Development")
 
 @app.route('/pixel_art')
 def pixel_art():
-    return render_template("index.html", title="Home")
+    return render_template("pixel_art.html", title="Pixel Art")
 
 
 @app.route('/about')
