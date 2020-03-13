@@ -42,6 +42,7 @@
     body {
         background-color: #34558b;
         font-family: "Lato", sans-serif;
+        line-height: 1.5em;
     }
     nav {
         position: fixed;
@@ -76,11 +77,18 @@
         margin-bottom: 1em;
     }
 
+    .site-split-column>div {
+        width: 50%;
+    }
+
 @media only screen and (orientation: portrait) {
     nav { bottom: 0; }
     #header { 
         height: 31.5vh; 
         margin-top: 1em;
+    }
+    .site-split-column>div {
+        width: 100%;
     }
 }
 @media only screen and (orientation: landscape) {
