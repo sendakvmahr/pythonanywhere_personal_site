@@ -8,6 +8,15 @@
 		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/normalize.css') }}">		
 		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">		
 		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+		<style>
+			#header{
+				background: url({{ url_for('static', filename='images/squiggle.png') }});
+				margin-top: 3.5em;
+				background-repeat: round;    
+				flex-direction: column;
+				margin-bottom: 1em;
+			}
+		</style>
 
 	</head>
 	<body>
@@ -19,7 +28,7 @@
 		</nav>
 		<div id="header">
 			<img src="{{ url_for('static',filename='images/Selfie.png') }}">
-			<h1 class="sans-serif">Sendak V. Mahr</h1>
+			<h1 class="sans-serif"><span>Sendak V. Mahr</span></h1>
 		</div>
 		<div id="content">
 			{% block content %}{% endblock %}

@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block content %}
+	<p class="center">
+		<a href="{{ url_for('web_development') }}">Web Designer</a> | 
+		<a href="{{ url_for('development') }}">Developer</a> | 
+		<strong>Pixel Artist </strong>
+		<div class="indent center">
+			<h4>Spring Fae</h4>
+			<img class="pixel" src="{{ url_for('static',filename='images/pixel/fae2x.png') }}">
+			<p>Commission for someone who really liked Fae and Fire Emblem Heroes.</p><br/>
+			
+			<h4>Arbol Spice Label</h4>
+			<img class="pixel" src="{{ url_for('static',filename='images/pixel/arbol.png') }}" style="width: 256px; height: 256px;">
+			<p>Example spice label design for arbol pepper powder.</p><br/>
+			
+			<h4>Internal Landscapes</h4>
+			<img class="pixel" src="{{ url_for('static',filename='images/pixel/Head2.png') }}">
+			<p>Personal work.</p><br/>
+
+			<h4>Leatherface cuts a Cake</h4>
+			<img class="pixel" src="{{ url_for('static',filename='images/pixel/Leatherface cake 1x.png') }}" style="width: 405px; height: 594px;">
+			<p>Commission for a birthday card.</p><br/>
+
+			<h4>Sun and Sun Reversed</h4>
+			<img class="pixel" src="{{ url_for('static',filename='images/pixel/Sun_Dual.png') }}">
+			<p>Concept for a lenticular print. </p><br/>
+		</div>
+		
+	<style>
+
+	#content img {
+		max-width: 100% !important;
+		clear: both;
+		display: block;
+		margin: auto;
+		
+	}
+	.pixel {
+		image-rendering: pixelated;
+		image-rendering: -moz-crisp-edges;
+		image-rendering: crisp-edges;
+	}
+	</style>
+{% endblock %}
