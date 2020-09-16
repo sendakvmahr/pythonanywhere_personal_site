@@ -9,6 +9,11 @@ def homepage():
 @app.route('/web_development')
 def web_development():
     return render_template("web_development.html", title="Web Development")
+    
+    
+@app.route('/web_development/ruthless')
+def web_dev_ruthless():
+    return render_template("ruthless.html", title="Web Development - Ruthless Vapor")
 
 @app.route('/development')
 def development():

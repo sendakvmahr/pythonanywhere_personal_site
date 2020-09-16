@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+{% block content %}
+	<p class="center">
+		<a href="{{ url_for('web_development') }}">Web Designer</a> | 
+		<a href="{{ url_for('development') }}">Developer</a> | 
+		<a href="{{ url_for('pixel_art') }}">Pixel Artist</a> 
+		<h2 class="center">ruthlessvapor.com</h2>
+		<div class="indent center">
+			<div id="ruthless-grid">
+				<p>Front Page</p>
+				<a href="{{ url_for('static',filename='images/sites/ruv _front.jpg') }}">
+					<img src="{{ url_for('static',filename='images/sites/site_icons/icon ruv _front.jpg') }}">
+				</a>
+				<a href="{{ url_for('static',filename='images/sites/ruv new-front.jpg') }}">
+					<img src="{{ url_for('static',filename='images/sites/site_icons/icon ruv new-front.jpg') }}">
+				</a>
+				
+				<p>Product Page</p>
+				<a href="{{ url_for('static',filename='images/sites/ruv old-product.jpg') }}">
+								<img src="{{ url_for('static',filename='images/sites/site_icons/icon ruv old-product.jpg') }}">
+				</a>				
+				<a href="{{ url_for('static',filename='images/sites/ruv ruthless-us.jpg') }}">
+								<img src="{{ url_for('static',filename='images/sites/site_icons/icon ruv ruthless-us.jpg') }}">
+				</a>
+				
+				<p>Collections Page</p>
+				<a href="{{ url_for('static',filename='images/sites/ruv old-collection.jpg') }}">
+								<img src="{{ url_for('static',filename='images/sites/site_icons/icon ruv old-collection.jpg') }}">
+				</a>
+				<a href="{{ url_for('static',filename='images/sites/ruv new-collection.jpg') }}">	
+								<img src="{{ url_for('static',filename='images/sites/site_icons/icon ruv new-collection.jpg') }}">
+				</a>
+				
+				<p>Language Samples: French and Arabic</p>
+				<a href="{{ url_for('static',filename='images/sites/ruv ruthless-fr.jpg') }}">	
+								<img src="{{ url_for('static',filename='images/sites/site_icons/icon ruv ruthless-fr.jpg') }}">
+				</a>
+				<a href="{{ url_for('static',filename='images/sites/ruv ruthless-ar.jpg') }}">	
+								<img src="{{ url_for('static',filename='images/sites/site_icons/icon ruv ruthless-ar.jpg') }}">
+				</a>
+				
+				
+				<p>New Page: Brand Listing</p>
+				<div></div>
+				<a href="{{ url_for('static',filename='images/sites/ruv new-brands.jpg') }}">	
+								<img src="{{ url_for('static',filename='images/sites/site_icons/icon ruv new-brands.jpg') }}">
+				</a>
+			</div>
+			<br>
+		</div>
+		<style>
+			#ruthless-grid {
+				display: inline-grid;
+				grid-template-columns: 20% 35% 35%;
+				grid-gap: 30px 5%;
+			}
+			#ruthless-grid p {
+				 align-self: center;
+			}
+			img {
+				max-width: 100%;
+				height: 100%;
+				
+			}
+			.clearer { 
+				clear: both;
+				width: 100%;
+			}
+			
+		</style>
+{% endblock %}
