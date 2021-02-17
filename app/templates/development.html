@@ -2,11 +2,63 @@
 {% block content %}
 	<p class="center">
 		<a href="{{ url_for('web_development') }}">Web Designer</a> | 
-		<a href="{{ url_for('development') }}">Developer</a> | 
+		<strong>Developer</strong> | 
 		<a href="{{ url_for('pixel_art') }}">Pixel Artist</a> 
+		
 		<div class="indent">
-			<h4>Development</h4>
+			<h2>What Logo Do I Want</h2>
+			<p>An uncreatively named venture into machine learning. A site that helps people generate stylesheets for their own logo by selecting logos similar to what they have in mind.</p>
+			<!--
+				Tech used: Flask [list all the ML libraries] and ddata css html js
+			-->
+			<a href="https://github.com/sendakvmahr/what-logo-do-i-want-web">Github</a>
 		</div>
+
 		<div class="indent">
-	</div>
+			<h2>Pixelater</h2>
+			<p>Tool to turn sketches and speedpaints into pixel art compatible bases.</p>
+			<a href="https://github.com/sendakvmahr/pixelater">Github</a>
+		</div>
+
+		<div class="indent">
+			<h2>
+				<img class="pixel" src="{{ url_for('static',filename='images/project images/soundskript.png') }}"/>
+				Sound Skript
+			</h2>
+			<p>A midi based song generator I wrote because I have more confidence in my ability to code than to compose. </p>
+			<a href="https://github.com/sendakvmahr/sound-skript">Github</a>
+		</div>
+
+		<div class="indent">
+			<h2>
+				<img class="pixel" src="{{ url_for('static',filename='images/project images/text.png') }}"/>Pixel Text
+			</h2>
+			<p>
+				Script used to generate imaged of pixelated font with options to set palettes when rendering. Used for more control over colors used in anti-aliasing, and for more palette options than a bitmap fonts allow for.
+			</p>
+			<a href="https://github.com/sendakvmahr/pixel-text">Github</a>
+			<!-- Examples
+			-->
+		</div>
+
+
+		<style>
+h2 img {
+	height: 48px; /* for now or else aspect ratio is not gonna work uygh*/
+	margin-bottom: -.5em;
+	padding-top: .5em;
+}
+.pixel {
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+
+		</style>
+
 {% endblock %}

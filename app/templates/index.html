@@ -5,42 +5,34 @@
 		<a href="{{ url_for('development') }}">Programmer</a> | 
 		<a href="{{ url_for('pixel_art') }}">Pixel Artist</a> 
 		<div class="indent">
-			<h4>Tell me more about yourself.</h4>
-			<p>I love baking, bread, and food. I also have a tendency to forget that hot things are hot. This leads to many accidents. </p>
-			<p>I am highly caffiene sensitive. It takes me over three hours to finish half cup of coffee. </p>
-			<p>I sometimes dream in 2d.</p>
+			<p>Web developer and pixel artist that picked up many other skills from all fields, just out of curiousity.</p>
 		</div>
 		<div class="indent">
-			<h4>What languages do you know?</h4>
-			<div class="indent">
-				I like learning languages for fun.
-				<ul id="languages">
-					<li><strong>French </strong><br>  Je parles français assez bien, mais ma vocabulaire ce n'est pas grande.</li>
-					<li><strong>Dutch </strong><br>  Ik lees en spreek een beetje Nederlands, maar mijn spreken niet goede.</li>
-					<li><strong>Japanese </strong><br>  日本語は楽しいです、でも私のキーボードは英語のキーボード。 書くのは楽しくない。</li>
-					<li><strong>Vietnamese </strong><br>  Nói được. Đọc được, mà không hiểu nhiều được.</li>
-					<li><strong>Spanish </strong><br>  Yo tengo un pecuito Español por la cocina.</li>
-					<li><strong>English </strong><br>  English is my native language.</li>
-				</ul>
-				Er wait, did you mean programming languages?
-				<ul>
-					<li><strong>Python </strong><br> First and most comfortable language. </li>
-					<li><strong>HTML/CSS/JS </strong><br> The web trio. I'm quite comfortable with them.</li>
-					<li><strong>C++ </strong><br> Not one of my main languages, but I use it occasionally.</li>
-					<li><strong>PHP </strong><br> I can.</li>
-					<li>Honestly, I do enjoy learning languages for fun. If I haven't heard of it, I'm sure I can pick it up in a reasonable amount of time. </li>
-				</ul>
-				For examples, see either <a href="{{ url_for('development') }}">code snippets</a> or <a href="{{ url_for('web_development') }}">web development. </a>
-			</div>
+			<h4>Spoken Languages</h4>
+			<ul id="languages">
+				<li><strong>French </strong>: Je parles français assez bien, mais ma vocabulaire ce n'est pas grande.</li>
+				<li><strong>Dutch</strong>: Ik lees en spreek een beetje Nederlands.</li>
+				<li><strong>Japanese</strong>: 日本語は楽しいです。英語のキーボードので書くのは楽しくない。</li>
+				<li><strong>Vietnamese</strong>: Nói được. Đọc được, mà không hiểu nhiều được.</li>
+				<li><strong>English</strong>: English is my native language.</li>
+			</ul>
+			<h4>Programming Languages</h4>
+			<ul>
+				<li><strong>Python </strong>: First and most comfortable language. </li>
+				<li><strong>HTML/CSS/JS </strong>: The web trio. I'm quite comfortable with them.</li>
+				<li><strong>C++ </strong>: Not one of my main languages, but I use it occasionally.</li>
+				<li><strong>PHP </strong>: I can.</li>
+				<li>I've used others that are less noteworthy. I also just enjoy learning languages for fun, and am generally down to pick something up. </li>
+			</ul>
 
-			<h4>Education?</h4>
+			<h4 class="hide-after">Education</h4>
 			<div class="indent">
 				I went to University of California, Irvine and graduated with a Computer Game Science degree.
 			</div>
 
-			<h4>Contact</h4>
-			<div class="indent">
-				sendak.vivian.mahr@gmail.com
-			</div>
+			<p>I can type more here, but would be more efficient to show you projects I've done in <a href="{{ url_for('web_development') }}">web development</a>, <a href="{{ url_for('development') }}">miscellaneous programming projects</a>, or <a href="{{ url_for('pixel_art') }}">images</a> I've drawn. </p>
+			<p>Any other questions, you can contact me at <a href="mailto:sendak.vivian.mahr@gmail.com">sendak.vivian.mahr@gmail.com</a>. 
+			</p>
+
 	</div>
 {% endblock %}
